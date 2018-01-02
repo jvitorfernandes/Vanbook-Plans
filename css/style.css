@@ -1,0 +1,286 @@
+body{
+	font-family: 'Cabin', 'futura-pt', sans-serif;
+	font-style: normal;
+	/*padding-bottom: 500px;*/
+	letter-spacing: 1px;
+	font-weight: 400px
+}
+/*menu*/
+.menu{
+	padding: 30px 0;
+}
+
+.menu nav ul{
+	text-align: right;
+}
+
+.menu nav ul li{
+	display: inline-block;
+}
+
+.menu nav ul li a{
+	color: #7c7d7e;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+.menu nav ul li a:hover{
+	color: #ff9307;
+}
+
+/*planos*/
+.planos{
+	position: relative;
+	background: url('../img/fundo.png') center 7%, linear-gradient(130deg, #3b99ff, #007bff);
+	height: 430px;
+}
+
+.planos .container{
+	max-width: 660px;
+	margin-bottom: : -40px;
+/*	display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+.planos h1{
+	color: white;
+	font-size: 54px;
+	text-align: center;
+	padding: 50px 0 40px 0;
+
+}
+
+.planos-item {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 310px;
+	background-color: white;
+	border-radius: 11px;
+	box-shadow: 6.428px 7.66px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+#silver{
+	margin-top: 55px;
+}
+
+.recomendado {
+	font-size: 18px;
+	position: absolute;
+	top: -12px;
+	right: -24px;
+  	border-radius: 11px;
+  	padding: 6px 20px 8px 20px;
+  	background-color: rgb(255, 147, 7);
+  	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.planos-nome{
+	position: relative;
+	background-color: #2c3e50;
+	color: white;
+	padding: 40px 30px 30px 33px;
+	border-radius: 11px 11px 0 0;
+	font-size: 36px;
+}
+
+.planos-nome h2{
+	display: inline-block;
+}
+
+.planos-nome span{
+	float: right;
+}
+
+.planos-nome sup{
+	font-size: .5em;
+}
+
+.planos-item ul{
+	padding: 0 26px;
+}
+
+.planos-item ul li{
+	color: #7c7d7e;
+	font-size: 22px;
+	border-bottom: solid 2px #eff0f0;
+	padding: 20px 0 14px 0;
+}
+
+.planos-item ul li:before{
+	content: '';
+	display: inline-block;
+	width: 31px;
+	height: 26px;
+	background: url(../img/check.svg) no-repeat center center;
+	margin-right: 10px;
+}
+
+
+.btn{
+	cursor: pointer;
+	display: block;
+	color: white;
+	font-size: 1em;
+	letter-spacing: .5px;
+	margin: 27px auto;
+	border-radius: 11px;
+  	background: linear-gradient(130deg, #3b99ff, #007bff);
+  	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  	width: 248px;
+  	height: 60px;
+  	border: 0;
+  	font-family: 'Cabin';
+}
+
+.btn:focus{
+	outline: none;
+}
+
+.btn:active {
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+}
+
+.modal {
+	color: #7c7d7e;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.6);
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.modal-wrapper {
+	position: relative;
+	background: white;
+	width: 350px;
+	margin: 10% auto;
+	padding: 40px 30px 30px 30px;
+	border-radius: 11px;
+}
+
+.modal input{
+	display: block;
+	margin: 2px 0 10px 0;
+	width: 100%;
+	padding: 11px;
+	border: solid 1px #e0e0e0;
+	border-radius: 4px;
+	color: #7c7d7e;
+}
+
+.modal input:focus{
+	outline: 0;
+}
+
+.modal h1{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #2c3e50;
+	font-size: 36px;
+}
+
+.modal-ativo{
+	display: block;
+}
+
+.modal-ativo .modal{
+	transition: .3s;
+	visibility: visible;
+	opacity: 1;
+	transform: (0, 120px);
+	display: block;
+}
+
+.modal-wrapper span{
+	font-size: 70px;
+	color: white;
+	position: absolute;
+	right: -90px;
+	top: -50px;
+	cursor: pointer;
+	padding: 5px 20px;
+}
+
+.beneficios-section {
+	margin-top: 400px;
+}
+
+.beneficio {
+	max-width: 800px;
+	margin: 0 auto 100px auto;
+	padding: 0px;
+	position: relative;
+}
+
+.beneficio:after, .beneficio:before {
+	content: "";
+	display: table;
+}
+
+.beneficio:after {
+	clear: both;
+}
+
+.beneficio h2 {
+	margin: 0 10px;
+	width: calc(50% - 20px);
+	float: left;
+	font-size: 5em;
+	line-height: .8;
+	text-align: right;
+	text-transform: uppercase;
+	color: #02A6EB;
+	font-family: monospace;
+}
+
+.beneficio h2::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: rgba(0,0,0,.05);
+	margin-bottom: 10px;
+}
+
+.beneficio p {
+	margin: 0 10px;
+	width: calc(50% - 20px);
+	float: left;
+	font-size: 1.1em;
+	line-height: 1.4;
+	padding-left: 40px;
+	color: rgba(0,0,0,.7);
+}
+
+.beneficio:nth-child(even) h2 {
+	text-align: left;
+}
+
+.beneficio:nth-child(even) p {
+	text-align: right;
+	padding-right: 40px;
+	padding-left: 0px;
+}
+
+.anime-left {
+	opacity: 0;
+	transition: 0.5s all ease;
+	transform: translate3d(-50px, 0, 0);
+}
+
+.anime-right {
+	opacity: 0;
+	transition: 0.5s all ease;
+	transform: translate3d(50px, 0, 0);
+}
+
+.anime-init{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
